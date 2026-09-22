@@ -13,7 +13,24 @@ namespace QuanLyDoChoi
             {
                 if (Session["Cart"] == null)
                 {
-                    Session["Cart"] = new List<ChiTietHoaDonModel>();
+                    List<ChiTietHoaDonModel> defaultItems = new List<ChiTietHoaDonModel>();
+                    defaultItems.Add(new ChiTietHoaDonModel
+                    {
+                        MaSP = 1,
+                        TenSP = "Mô Hình Gundam RX-78-2 HG 1/144",
+                        SoLuong = 1,
+                        DonGia = 450000,
+                        ThanhTien = 450000
+                    });
+                    defaultItems.Add(new ChiTietHoaDonModel
+                    {
+                        MaSP = 4,
+                        TenSP = "Hộp 5 Xe Đua Hot Wheels Siêu Tốc",
+                        SoLuong = 2,
+                        DonGia = 250000,
+                        ThanhTien = 500000
+                    });
+                    Session["Cart"] = defaultItems;
                 }
                 return (List<ChiTietHoaDonModel>)Session["Cart"];
             }

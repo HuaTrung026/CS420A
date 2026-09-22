@@ -39,13 +39,13 @@
                 <asp:Repeater ID="rptSanPham" runat="server" OnItemCommand="rptSanPham_ItemCommand">
                     <ItemTemplate>
                         <div class="col">
-                            <div class="card h-100 bg-white">
-                                <div class="text-center p-2 bg-light border-bottom" style="height: 140px;">
-                                    <img src='<%# Eval("HinhAnh") %>' class="img-fluid h-100" style="object-fit: contain;" alt='<%# Eval("TenSP") %>'
-                                         onerror="this.src='https://images.unsplash.com/photo-1533230393618-0c74ed0dc23e?w=400';" />
+                            <div class="card h-100 bg-white border shadow-sm">
+                                <div class="bg-white border-bottom p-2 d-flex align-items-center justify-content-center position-relative" style="height: 155px;">
+                                    <img src='<%# Eval("HinhAnh") %>' class="img-fluid" style="max-height: 140px; max-width: 100%; object-fit: contain;" alt='<%# Eval("TenSP") %>'
+                                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=500';" />
+                                    <span class="position-absolute top-0 start-0 m-2 badge bg-secondary" style="font-size: 0.72rem;"><%# Eval("Loai") %></span>
                                 </div>
                                 <div class="card-body p-3 d-flex flex-column">
-                                    <span class="badge bg-secondary mb-1 align-self-start"><%# Eval("Loai") %></span>
                                     <h6 class="card-title fw-bold text-dark text-truncate mb-2" title='<%# Eval("TenSP") %>'><%# Eval("TenSP") %></h6>
                                     <div class="d-flex justify-content-between align-items-center mb-3">
                                         <span class="fw-bold text-danger fs-6"><%# string.Format("{0:N0} đ", Eval("Gia")) %></span>

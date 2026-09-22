@@ -1,14 +1,67 @@
 <%@ Page Title="Lịch Sử Hóa Đơn" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="HoaDon.aspx.cs" Inherits="QuanLyDoChoi.HoaDon" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row mb-3">
-        <div class="col-md-12">
-            <h4 class="fw-bold text-primary mb-1"><i class="bi bi-journal-text"></i> Lịch Sử Hóa Đơn Bán Hàng</h4>
-            <p class="text-muted small">Xem lại danh sách các hóa đơn bán hàng đã lưu trong hệ thống</p>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+            <h4 class="fw-bold text-primary mb-1"><i class="bi bi-journal-text me-1"></i> Lịch Sử Hóa Đơn Bán Hàng</h4>
+            <p class="text-muted small mb-0">Danh sách các hóa đơn bán hàng và thông tin chi tiết từng đơn hàng</p>
+        </div>
+        <div>
+            <a href="BanHang.aspx" class="btn btn-outline-primary btn-sm fw-semibold">
+                <i class="bi bi-cart-plus me-1"></i> Tạo đơn mới
+            </a>
         </div>
     </div>
 
-    <div class="card">
+    <!-- Hàng Thống Kê Nhanh (Cân đối khoảng trắng) -->
+    <div class="row g-3 mb-3">
+        <div class="col-md-4">
+            <div class="card p-3 bg-white border shadow-sm">
+                <div class="d-flex align-items-center">
+                    <div class="p-3 bg-primary-subtle text-primary rounded-3 me-3">
+                        <i class="bi bi-receipt fs-4"></i>
+                    </div>
+                    <div>
+                        <div class="text-muted small">Tổng số hóa đơn</div>
+                        <h5 class="fw-bold mb-0 text-dark"><asp:Literal ID="lblTongSoHD" runat="server">0</asp:Literal> đơn hàng</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3 bg-white border shadow-sm">
+                <div class="d-flex align-items-center">
+                    <div class="p-3 bg-success-subtle text-success rounded-3 me-3">
+                        <i class="bi bi-cash-stack fs-4"></i>
+                    </div>
+                    <div>
+                        <div class="text-muted small">Tổng doanh thu bán hàng</div>
+                        <h5 class="fw-bold mb-0 text-success"><asp:Literal ID="lblTongDoanhThu" runat="server">0 đ</asp:Literal></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3 bg-white border shadow-sm">
+                <div class="d-flex align-items-center">
+                    <div class="p-3 bg-warning-subtle text-dark rounded-3 me-3">
+                        <i class="bi bi-person-badge fs-4"></i>
+                    </div>
+                    <div>
+                        <div class="text-muted small">Thu ngân đang đăng nhập</div>
+                        <h5 class="fw-bold mb-0 text-dark"><asp:Literal ID="lblThuNganHienTai" runat="server">Admin</asp:Literal></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bảng Danh Sách Hóa Đơn -->
+    <div class="card bg-white border shadow-sm" style="min-height: 250px;">
+        <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+            <span class="fw-bold"><i class="bi bi-list-check me-1"></i> Danh Sách Hóa Đơn Gần Đây</span>
+            <span class="badge bg-secondary">Hệ thống tự động lưu</span>
+        </div>
         <div class="card-body p-0">
             <div class="table-responsive">
                 <table class="table table-bordered table-hover align-middle mb-0">
@@ -44,7 +97,8 @@
             </div>
 
             <asp:PlaceHolder ID="phEmpty" runat="server" Visible="false">
-                <div class="text-center py-4 text-muted small">
+                <div class="text-center py-5 text-muted small">
+                    <i class="bi bi-inbox fs-1 d-block text-black-50 mb-2"></i>
                     Chưa có hóa đơn nào trong hệ thống.
                 </div>
             </asp:PlaceHolder>

@@ -35,6 +35,20 @@ namespace QuanLyDoChoi
             rptHoaDon.DataBind();
 
             phEmpty.Visible = (list.Count == 0);
+
+            decimal tongDoanhThu = 0;
+            foreach (var hd in list)
+            {
+                tongDoanhThu += hd.TongTien;
+            }
+            lblTongSoHD.Text = list.Count.ToString();
+            lblTongDoanhThu.Text = string.Format("{0:N0} đ", tongDoanhThu);
+
+            NguoiDung u = Session["User"] as NguoiDung;
+            if (u != null)
+            {
+                lblThuNganHienTai.Text = u.HoTen;
+            }
         }
 
         protected void rptHoaDon_ItemCommand(object source, RepeaterCommandEventArgs e)

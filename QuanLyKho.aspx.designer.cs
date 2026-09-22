@@ -4,6 +4,9 @@ namespace QuanLyDoChoi
     {
         protected global::System.Web.UI.WebControls.Panel pnlAlert;
         protected global::System.Web.UI.WebControls.Literal lblAlertMsg;
+        protected global::System.Web.UI.WebControls.Literal lblTongMatHang;
+        protected global::System.Web.UI.WebControls.Literal lblCanhBao;
+        protected global::System.Web.UI.WebControls.Literal lblTongSoLuongTon;
         protected global::System.Web.UI.WebControls.TextBox txtTimKho;
         protected global::System.Web.UI.WebControls.Repeater rptKho;
         protected global::System.Web.UI.WebControls.DropDownList ddlSanPhamNhap;

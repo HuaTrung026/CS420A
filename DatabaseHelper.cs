@@ -84,12 +84,12 @@ namespace QuanLyDoChoi
             mockUsers.Add(new NguoiDung { TenDangNhap = "kho", MatKhau = "123456", HoTen = "Thủ Kho B", Quyen = "Kho" });
 
             mockProducts.Clear();
-            mockProducts.Add(new SanPham { MaSP = 1, TenSP = "Mô Hình Gundam RX-78-2 HG 1/144", Loai = "Mô hình", Gia = 450000, SoLuongTon = 15, HinhAnh = "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=400" });
-            mockProducts.Add(new SanPham { MaSP = 2, TenSP = "Bộ Lắp Ráp Lego City Cảnh Sát Trượt Xe", Loai = "Lego", Gia = 890000, SoLuongTon = 20, HinhAnh = "https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=400" });
-            mockProducts.Add(new SanPham { MaSP = 3, TenSP = "Búp Bê Barbie Công Chúa Thời Trang", Loai = "Búp bê", Gia = 320000, SoLuongTon = 8, HinhAnh = "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=400" });
-            mockProducts.Add(new SanPham { MaSP = 4, TenSP = "Xe Đua Hot Wheels Siêu Tốc Độ Pack 5", Loai = "Xe mô hình", Gia = 250000, SoLuongTon = 30, HinhAnh = "https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=400" });
-            mockProducts.Add(new SanPham { MaSP = 5, TenSP = "Mô Hình Robot Transformer Optimus Prime", Loai = "Mô hình", Gia = 1200000, SoLuongTon = 4, HinhAnh = "https://images.unsplash.com/photo-1563089145-599997674d42?w=400" });
-            mockProducts.Add(new SanPham { MaSP = 6, TenSP = "Bộ Đồ Chơi Cát Động Học Kèm Khuôn", Loai = "Đồ chơi giáo dục", Gia = 150000, SoLuongTon = 25, HinhAnh = "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400" });
+            mockProducts.Add(new SanPham { MaSP = 1, TenSP = "Mô Hình Gundam RX-78-2 HG 1/144", Loai = "Mô hình", Gia = 450000, SoLuongTon = 15, HinhAnh = "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=500&auto=format&fit=crop&q=80" });
+            mockProducts.Add(new SanPham { MaSP = 2, TenSP = "Bộ Lắp Ráp Lego City Cảnh Sát Đuổi Bắt", Loai = "Lego", Gia = 890000, SoLuongTon = 20, HinhAnh = "https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=500&auto=format&fit=crop&q=80" });
+            mockProducts.Add(new SanPham { MaSP = 3, TenSP = "Búp Bê Barbie Thời Trang Dạ Hội", Loai = "Búp bê", Gia = 320000, SoLuongTon = 8, HinhAnh = "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=500&auto=format&fit=crop&q=80" });
+            mockProducts.Add(new SanPham { MaSP = 4, TenSP = "Hộp 5 Xe Đua Hot Wheels Siêu Tốc", Loai = "Xe mô hình", Gia = 250000, SoLuongTon = 30, HinhAnh = "https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=500&auto=format&fit=crop&q=80" });
+            mockProducts.Add(new SanPham { MaSP = 5, TenSP = "Mô Hình Robot Biến Hình Transformers", Loai = "Mô hình", Gia = 1200000, SoLuongTon = 4, HinhAnh = "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500&auto=format&fit=crop&q=80" });
+            mockProducts.Add(new SanPham { MaSP = 6, TenSP = "Hộp Boardgame Cờ Tỷ Phú Cao Cấp", Loai = "Boardgame", Gia = 180000, SoLuongTon = 25, HinhAnh = "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=500&auto=format&fit=crop&q=80" });
 
             mockInvoices.Clear();
             List<ChiTietHoaDonModel> sampleItems = new List<ChiTietHoaDonModel>();
@@ -143,12 +143,12 @@ namespace QuanLyDoChoi
                             [HinhAnh] VARCHAR(255) NULL
                         );
                         INSERT INTO [dbo].[SanPham] ([TenSP], [Loai], [Gia], [SoLuongTon], [HinhAnh]) VALUES
-                        (N'Mô Hình Gundam RX-78-2 HG 1/144', N'Mô hình', 450000, 15, 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=400'),
-                        (N'Bộ Lắp Ráp Lego City Cảnh Sát Trượt Xe', N'Lego', 890000, 20, 'https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=400'),
-                        (N'Búp Bê Barbie Công Chúa Thời Trang', N'Búp bê', 320000, 8, 'https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=400'),
-                        (N'Xe Đua Hot Wheels Siêu Tốc Độ Pack 5', N'Xe mô hình', 250000, 30, 'https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=400'),
-                        (N'Mô Hình Robot Transformer Optimus Prime', N'Mô hình', 1200000, 4, 'https://images.unsplash.com/photo-1563089145-599997674d42?w=400'),
-                        (N'Bộ Đồ Chơi Cát Động Học Kèm Khuôn', N'Đồ chơi giáo dục', 150000, 25, 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400');
+                        (N'Mô Hình Gundam RX-78-2 HG 1/144', N'Mô hình', 450000, 15, 'https://images.unsplash.com/photo-1589254065878-42c9da997008?w=500&auto=format&fit=crop&q=80'),
+                        (N'Bộ Lắp Ráp Lego City Cảnh Sát Đuổi Bắt', N'Lego', 890000, 20, 'https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=500&auto=format&fit=crop&q=80'),
+                        (N'Búp Bê Barbie Thời Trang Dạ Hội', N'Búp bê', 320000, 8, 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=500&auto=format&fit=crop&q=80'),
+                        (N'Hộp 5 Xe Đua Hot Wheels Siêu Tốc', N'Xe mô hình', 250000, 30, 'https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=500&auto=format&fit=crop&q=80'),
+                        (N'Mô Hình Robot Biến Hình Transformers', N'Mô hình', 1200000, 4, 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500&auto=format&fit=crop&q=80'),
+                        (N'Hộp Boardgame Cờ Tỷ Phú Cao Cấp', N'Boardgame', 180000, 25, 'https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=500&auto=format&fit=crop&q=80');
                     END;
 
                     IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[HoaDon]') AND type in (N'U'))

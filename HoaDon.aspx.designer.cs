@@ -2,6 +2,9 @@ namespace QuanLyDoChoi
 {
     public partial class HoaDon
     {
+        protected global::System.Web.UI.WebControls.Literal lblTongSoHD;
+        protected global::System.Web.UI.WebControls.Literal lblTongDoanhThu;
+        protected global::System.Web.UI.WebControls.Literal lblThuNganHienTai;
         protected global::System.Web.UI.WebControls.Repeater rptHoaDon;
         protected global::System.Web.UI.WebControls.PlaceHolder phEmpty;
         protected global::System.Web.UI.WebControls.PlaceHolder phModalChiTiet;

@@ -34,6 +34,19 @@ namespace QuanLyDoChoi
             rptKho.DataSource = list;
             rptKho.DataBind();
 
+            // Tính toán số liệu thống kê kho
+            List<SanPham> allProducts = DatabaseHelper.GetDanhSachSanPham("");
+            lblTongMatHang.Text = allProducts.Count.ToString();
+            int canhBaoCount = 0;
+            int tongTon = 0;
+            foreach (var p in allProducts)
+            {
+                if (p.SoLuongTon < 5) canhBaoCount++;
+                tongTon += p.SoLuongTon;
+            }
+            lblCanhBao.Text = canhBaoCount.ToString();
+            lblTongSoLuongTon.Text = tongTon.ToString();
+
             if (string.IsNullOrEmpty(kw))
             {
                 ddlSanPhamNhap.Items.Clear();

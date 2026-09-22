@@ -34,12 +34,12 @@ BEGIN
     );
 
     INSERT INTO [dbo].[SanPham] ([TenSP], [Loai], [Gia], [SoLuongTon], [HinhAnh]) VALUES
-    (N'Mô Hình Gundam RX-78-2 HG 1/144', N'Mô hình', 450000, 15, 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=400'),
-    (N'Bộ Lắp Ráp Lego City Cảnh Sát Trượt Xe', N'Lego', 890000, 20, 'https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=400'),
-    (N'Búp Bê Barbie Công Chúa Thời Trang', N'Búp bê', 320000, 8, 'https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=400'),
-    (N'Xe Đua Hot Wheels Siêu Tốc Độ Pack 5', N'Xe mô hình', 250000, 30, 'https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=400'),
-    (N'Mô Hình Robot Transformer Optimus Prime', N'Mô hình', 1200000, 4, 'https://images.unsplash.com/photo-1563089145-599997674d42?w=400'),
-    (N'Bộ Đồ Chơi Cát Động Học Kèm Khuôn Tròn', N'Đồ chơi giáo dục', 150000, 25, 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400');
+    (N'Mô Hình Gundam RX-78-2 HG 1/144', N'Mô hình', 450000, 15, 'https://images.unsplash.com/photo-1589254065878-42c9da997008?w=500&auto=format&fit=crop&q=80'),
+    (N'Bộ Lắp Ráp Lego City Cảnh Sát Đuổi Bắt', N'Lego', 890000, 20, 'https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=500&auto=format&fit=crop&q=80'),
+    (N'Búp Bê Barbie Thời Trang Dạ Hội', N'Búp bê', 320000, 8, 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=500&auto=format&fit=crop&q=80'),
+    (N'Hộp 5 Xe Đua Hot Wheels Siêu Tốc', N'Xe mô hình', 250000, 30, 'https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=500&auto=format&fit=crop&q=80'),
+    (N'Mô Hình Robot Biến Hình Transformers', N'Mô hình', 1200000, 4, 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500&auto=format&fit=crop&q=80'),
+    (N'Hộp Boardgame Cờ Tỷ Phú Cao Cấp', N'Boardgame', 180000, 25, 'https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=500&auto=format&fit=crop&q=80');
 END
 GO
 
