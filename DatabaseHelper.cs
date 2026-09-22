@@ -84,12 +84,12 @@ namespace QuanLyDoChoi
             mockUsers.Add(new NguoiDung { TenDangNhap = "kho", MatKhau = "123456", HoTen = "Thủ Kho B", Quyen = "Kho" });
 
             mockProducts.Clear();
-            mockProducts.Add(new SanPham { MaSP = 1, TenSP = "Mô Hình Gundam RX-78-2 HG 1/144", Loai = "Mô hình", Gia = 450000, SoLuongTon = 15, HinhAnh = "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=500&auto=format&fit=crop&q=80" });
-            mockProducts.Add(new SanPham { MaSP = 2, TenSP = "Bộ Lắp Ráp Lego City Cảnh Sát Đuổi Bắt", Loai = "Lego", Gia = 890000, SoLuongTon = 20, HinhAnh = "https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=500&auto=format&fit=crop&q=80" });
-            mockProducts.Add(new SanPham { MaSP = 3, TenSP = "Búp Bê Barbie Thời Trang Dạ Hội", Loai = "Búp bê", Gia = 320000, SoLuongTon = 8, HinhAnh = "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=500&auto=format&fit=crop&q=80" });
-            mockProducts.Add(new SanPham { MaSP = 4, TenSP = "Hộp 5 Xe Đua Hot Wheels Siêu Tốc", Loai = "Xe mô hình", Gia = 250000, SoLuongTon = 30, HinhAnh = "https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=500&auto=format&fit=crop&q=80" });
-            mockProducts.Add(new SanPham { MaSP = 5, TenSP = "Mô Hình Robot Biến Hình Transformers", Loai = "Mô hình", Gia = 1200000, SoLuongTon = 4, HinhAnh = "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500&auto=format&fit=crop&q=80" });
-            mockProducts.Add(new SanPham { MaSP = 6, TenSP = "Hộp Boardgame Cờ Tỷ Phú Cao Cấp", Loai = "Boardgame", Gia = 180000, SoLuongTon = 25, HinhAnh = "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=500&auto=format&fit=crop&q=80" });
+            mockProducts.Add(new SanPham { MaSP = 1, TenSP = "Mô Hình Gundam RX-78-2 HG 1/144", Loai = "Mô hình", Gia = 450000, SoLuongTon = 15, HinhAnh = "https://thanhnien.mediacdn.vn/uploaded/lenammedia/2020_10_15/dsc04014_OAME.jpg?width=500" });
+            mockProducts.Add(new SanPham { MaSP = 2, TenSP = "Bộ Lắp Ráp Lego City Cảnh Sát Đuổi Bắt", Loai = "Lego", Gia = 890000, SoLuongTon = 20, HinhAnh = "https://legobox.com.vn/wp-content/uploads/2024/01/LEGO-City-Centre-Downtown-60380-600x600.jpeg" });
+            mockProducts.Add(new SanPham { MaSP = 3, TenSP = "Búp Bê Barbie Thời Trang Dạ Hội", Loai = "Búp bê", Gia = 320000, SoLuongTon = 8, HinhAnh = "https://www.mykingdom.com.vn/cdn/shop/files/bup-be-thoi-trang-fashionista-barbie-blue-bows-barbie-hyt93_1.jpg" });
+            mockProducts.Add(new SanPham { MaSP = 4, TenSP = "Hộp 5 Xe Đua Hot Wheels Siêu Tốc", Loai = "Xe mô hình", Gia = 250000, SoLuongTon = 30, HinhAnh = "https://store-images.s-microsoft.com/image/apps.26439.14040499184812699.c9eacfaa-a7fd-47cc-95a2-7c0f298fccec.9912e773-11dd-4efb-b5c0-2e50a99c7ed5" });
+            mockProducts.Add(new SanPham { MaSP = 5, TenSP = "Mô Hình Robot Biến Hình Transformers", Loai = "Mô hình", Gia = 1200000, SoLuongTon = 4, HinhAnh = "https://img-comment-fun.9cache.com/media/aPwAgzn/alzJ2N3p_700w_0.jpg" });
+            mockProducts.Add(new SanPham { MaSP = 6, TenSP = "Hộp Boardgame Cờ Tỷ Phú Cao Cấp", Loai = "Boardgame", Gia = 180000, SoLuongTon = 25, HinhAnh = "https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/Knms/meo-vat/thanh-phan-co-ban-cua-bo-co-ty-phu.jpg" });
 
             mockInvoices.Clear();
             List<ChiTietHoaDonModel> sampleItems = new List<ChiTietHoaDonModel>();
@@ -143,12 +143,12 @@ namespace QuanLyDoChoi
                             [HinhAnh] VARCHAR(255) NULL
                         );
                         INSERT INTO [dbo].[SanPham] ([TenSP], [Loai], [Gia], [SoLuongTon], [HinhAnh]) VALUES
-                        (N'Mô Hình Gundam RX-78-2 HG 1/144', N'Mô hình', 450000, 15, 'https://images.unsplash.com/photo-1589254065878-42c9da997008?w=500&auto=format&fit=crop&q=80'),
-                        (N'Bộ Lắp Ráp Lego City Cảnh Sát Đuổi Bắt', N'Lego', 890000, 20, 'https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=500&auto=format&fit=crop&q=80'),
-                        (N'Búp Bê Barbie Thời Trang Dạ Hội', N'Búp bê', 320000, 8, 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=500&auto=format&fit=crop&q=80'),
-                        (N'Hộp 5 Xe Đua Hot Wheels Siêu Tốc', N'Xe mô hình', 250000, 30, 'https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=500&auto=format&fit=crop&q=80'),
-                        (N'Mô Hình Robot Biến Hình Transformers', N'Mô hình', 1200000, 4, 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500&auto=format&fit=crop&q=80'),
-                        (N'Hộp Boardgame Cờ Tỷ Phú Cao Cấp', N'Boardgame', 180000, 25, 'https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=500&auto=format&fit=crop&q=80');
+                        (N'Mô Hình Gundam RX-78-2 HG 1/144', N'Mô hình', 450000, 15, 'https://thanhnien.mediacdn.vn/uploaded/lenammedia/2020_10_15/dsc04014_OAME.jpg?width=500'),
+                        (N'Bộ Lắp Ráp Lego City Cảnh Sát Đuổi Bắt', N'Lego', 890000, 20, 'https://legobox.com.vn/wp-content/uploads/2024/01/LEGO-City-Centre-Downtown-60380-600x600.jpeg'),
+                        (N'Búp Bê Barbie Thời Trang Dạ Hội', N'Búp bê', 320000, 8, 'https://www.mykingdom.com.vn/cdn/shop/files/bup-be-thoi-trang-fashionista-barbie-blue-bows-barbie-hyt93_1.jpg'),
+                        (N'Hộp 5 Xe Đua Hot Wheels Siêu Tốc', N'Xe mô hình', 250000, 30, 'https://store-images.s-microsoft.com/image/apps.26439.14040499184812699.c9eacfaa-a7fd-47cc-95a2-7c0f298fccec.9912e773-11dd-4efb-b5c0-2e50a99c7ed5'),
+                        (N'Mô Hình Robot Biến Hình Transformers', N'Mô hình', 1200000, 4, 'https://img-comment-fun.9cache.com/media/aPwAgzn/alzJ2N3p_700w_0.jpg'),
+                        (N'Hộp Boardgame Cờ Tỷ Phú Cao Cấp', N'Boardgame', 180000, 25, 'https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/Knms/meo-vat/thanh-phan-co-ban-cua-bo-co-ty-phu.jpg');
                     END;
 
                     IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[HoaDon]') AND type in (N'U'))
