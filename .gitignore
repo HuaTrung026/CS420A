@@ -1,0 +1,24 @@
+# Build output & binaries
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+
+# Visual Studio files
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+# NuGet Packages
+packages/
+
+# Local database files
+App_Data/*.mdf
+App_Data/*.ldf
+
+# Temporary & Log files
+*.log
+*.tmp
+*.cache
