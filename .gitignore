@@ -1,24 +1,22 @@
-# Build output & binaries
-bin/
-obj/
-[Dd]ebug/
-[Rr]elease/
-
-# Visual Studio files
+# Visual Studio
 .vs/
 *.user
-*.userosscache
-*.sln.docstates
 *.suo
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+Debug/
+Release/
 
 # NuGet Packages
 packages/
 
-# Local database files
+# Local Database (Database files)
 App_Data/*.mdf
 App_Data/*.ldf
 
 # Temporary & Log files
 *.log
 *.tmp
-*.cache
